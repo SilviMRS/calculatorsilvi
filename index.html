@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!-- change this to trigger a sync/commit/gh-pages refresh cycle -->
+  <head>
+    <title>Zeph Grunschlag -  GPA Analyzer</title>
+
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="./assets/stylesheets/application.css" />
+
+    <script src="./assets/javascripts/jquery-1.9.1.js"></script>
+    <script src="./assets/javascripts/calculator.js"></script>
+  </head>
+  <body>
+
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">GPA Analyzer</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="hero-unit" id="calculator-wrapper">
+        <div class="row">
+          <div class="input-prepend">
+            <span class="add-on">Credits: </span>
+            <input class="span3" id="currCredsInput" type="number" placeholder=18 >
+          </div>
+          <div class="input-prepend">
+            <span class="add-on">Current GPA: </span>
+            <input class="span4 offset2" id="currGpaInput" type="text" placeholder="2.7654">
+          </div>
+        <div class="row">
+          <div class="input-prepend">
+            <span class="add-on">Future credits: </span>
+            <input class="span3 offset1" id="futureCredsInput" type="number" placeholder=12>
+          </div>
+          <div class="input-prepend">
+            <span class="add-on">Desired GPA: </span>
+            <input class="span3 offset2" id="desiredGpaInput" type="text" placeholder="3.0000">
+          </div>
+          <div class="row">
+            </div>
+              <a href="#" class="span4, btn btn-primary" data-method="calc_required_gpa">&rarr;</a>
+              <div class="input-prepend">
+                <span class="add-on">Required Future GPA: </span>
+                <div id="calculator-result" class="uneditable-input">3.3519</div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+      <table width="200" border="1" cellpadding="1" cellspacing="1">
+        <tbody>
+        <tr>
+        <td><strong>Grade</strong></td>
+        <td><strong>Equivalent</strong></td>
+        </tr>
+        <tr>
+        <td>A+</td>
+        <td>4.33</td>
+        </tr>
+        <tr>
+        <td>A</td>
+        <td>4.00</td>
+        </tr>
+        <tr>
+        <td>A-</td>
+        <td>3.67</td>
+        </tr>
+        <tr>
+        <td>B+</td>
+        <td>3.33</td>
+        </tr>
+        <tr>
+        <td>B</td>
+        <td>3.00</td>
+        </tr>
+        <tr>
+        <td>B-</td>
+        <td>2.67</td>
+        </tr>
+        <tr>
+        <td>C+</td>
+        <td>2.33</td>
+        </tr>
+        <tr>
+        <td>C</td>
+        <td>2.00</td>
+        </tr>
+        <tr>
+        <td>C-</td>
+        <td>1.67</td>
+        </tr>
+        <tr>
+        <td>D+</td>
+        <td>1.33</td>
+        </tr>
+        <tr>
+        <td>D</td>
+        <td>1.00</td>
+        </tr>
+        <tr>
+        <td>D-</td>
+        <td>0.67</td>
+        </tr>
+        <tr>
+        <td>F</td>
+        <td>0.00</td>
+        </tr>
+        </tbody>
+      </table>
+
+
+<div class="initialism">
+  <small>This program is based on Maciej Mensfeld's <a href="https://github.com/mensfeld/bootstrap-calculator">Bootstrap calculator</a> project.</small>
+</div>
+
+  </body>
+</html>
